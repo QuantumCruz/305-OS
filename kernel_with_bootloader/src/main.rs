@@ -160,6 +160,8 @@ fn my_entry_point(boot_info: &'static mut bootloader_api::BootInfo) -> ! {
     };
     println!("\nString entered is '{}'", input);
 
+    let returned_input = input_str!("I did this in less than 10 minutes");
+
 
     // invoke a breakpoint exception for test
     //x86_64::instructions::interrupts::int3();
